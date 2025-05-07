@@ -1,0 +1,51 @@
+package ejemplo1;
+
+/**
+ *
+ * @author LAB-USR-LNORTE
+ */
+public abstract class Fplana extends Figura {
+    private double perimetro;
+    private double area; 
+    
+    //metodos 
+    public void deformar(){
+        System.out.println("la figura plana se deforma");
+    }
+    public abstract String reporte();
+    //geter y setter
+
+    public double getPerimetro() {
+        return perimetro;
+    }
+
+    public void setPerimetro(double perimetro) {
+        this.perimetro = perimetro;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+//sobreescritura de metodos abstractos 
+    @Override
+    public void mover() {
+        System.out.println("la figura plana se esta moviendo");
+       
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("la figura plana se esta dibujando");
+        
+    }
+    
+    
+
+
+    
+    
+}
