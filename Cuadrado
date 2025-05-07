@@ -1,0 +1,71 @@
+package ejemplo1;
+
+/**
+ *
+ * @author LAB-USR-LNORTE
+ */
+public class  Cuadrado extends Fplana {
+    private double lado;
+    private double diagonal;
+    private double apotema;
+
+    public Cuadrado() {
+    }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+
+    public double getDiagonal() {
+        diagonal = lado* Math.sqrt(2); 
+        return diagonal;
+    }
+
+    public void setDiagonal(double diagonal) {
+        this.diagonal = diagonal;
+        this.lado = diagonal / Math.sqrt(2);
+    }
+
+    public double getApotema() {
+        apotema = lado/2; 
+        return apotema;
+    }
+
+    public void setApotema(double apotema) {
+        this.apotema = apotema;
+        this.lado = 2* apotema;
+    }
+
+    @Override
+    public String reporte() {
+       String salida = "\n reporte de cuadrado:"+
+               "\n lado : "+this.lado +
+               "\n apotema : "+getApotema() +
+               "\n Diagonal : "+getDiagonal() + 
+               "\n perimetro : "+ getPerimetro() +
+               "\n area : "+ getArea() +
+               "\n nombre : "+getNombre() +
+               "\n tipo : "+getTipo();
+       return salida; 
+               
+               
+               
+    }
+
+    @Override
+    public void mover() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void dibujar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
+    
+}
