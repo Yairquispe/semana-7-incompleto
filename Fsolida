@@ -1,0 +1,11 @@
+package ejemplo1;
+
+/**
+ *
+ * @author LAB-USR-LNORTE
+ */
+public class Fsolida {
+    private double volumen;
+    private double peso;
+    
+}
