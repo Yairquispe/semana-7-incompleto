@@ -1,0 +1,54 @@
+package ejemplo1;
+
+/**
+ *
+ * @author LAB-USR-LNORTE
+ */
+public class Circunferencia extends Fplana {
+    private double radio;
+    private double diametro;
+
+    public Circunferencia() {
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
+    public double getDiametro() {
+        diametro = 2* radio;
+        return diametro;
+        
+    }
+
+    public void setDiametro(double diametro) {
+        this.diametro = diametro;
+    }
+    public double getperimetro(double diametro){
+    return 2* Math.PI * radio ; 
+            
+    }
+    public double getarea(double area){
+    return 2* Math.PI * Math.pow(radio, 2);    
+    }
+
+    @Override
+    public String reporte() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void mover() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void dibujar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+}
