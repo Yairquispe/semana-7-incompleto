@@ -1,0 +1,22 @@
+package ejemplo1;
+
+/**
+ *
+ * @author LAB-USR-LNORTE
+ */
+public class ejecutor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Pirmera instancia de tipo figura ");
+        //figura f01 = new figura (); 
+        //Fplana fp01 = new Fplana();
+        Cuadrado c01= new Cuadrado();
+        c01.setLado(6);
+        System.out.println(c01.reporte());
+    }
+    
+}
